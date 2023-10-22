@@ -1,0 +1,710 @@
+{
+	"id": "73a2e7de-9099-4cc6-ad88-249162ec5086",
+	"name": "Resolucao Desafio Backend Final - M05 - PDV",
+	"timestamp": "2023-10-03T16:40:00.889Z",
+	"collection_id": "21732288-ce36f718-c627-4420-a352-b8841545f927",
+	"folder_id": "21732288-f4895c65-abd8-44bc-b3ec-4b4e132b02fe",
+	"environment_id": "21732288-4c3e7026-c60c-4130-ae36-35d971674897",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-10-03T16:39:51.194Z",
+	"totalFail": 13,
+	"results": [
+		{
+			"id": "06108d1a-6520-40d4-ad20-835828977bee",
+			"name": "Listar Categorias",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/categoria",
+			"time": 2668,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Token valido, sem parametro categoria_id informado, esperado receber objeto e status 200": true
+			},
+			"testPassFailCounts": {
+				"Token valido, sem parametro categoria_id informado, esperado receber objeto e status 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2668
+			],
+			"allTests": [
+				{
+					"Token valido, sem parametro categoria_id informado, esperado receber objeto e status 200": true
+				}
+			]
+		},
+		{
+			"id": "e2a70a9b-451a-48a5-a8a9-6c60492733fe",
+			"name": "Corpo Vazio",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 370,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Corpo vazio, esperado receber mensagem de erro e status 400": false
+			},
+			"testPassFailCounts": {
+				"Corpo vazio, esperado receber mensagem de erro e status 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				370
+			],
+			"allTests": [
+				{
+					"Corpo vazio, esperado receber mensagem de erro e status 400": false
+				}
+			]
+		},
+		{
+			"id": "d2b6bebb-7185-4af7-b4c5-caa2d3e5ae25",
+			"name": "Corpo Inváido - Sem propriedade nome",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 289,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Corpo invalido, sem propriedade nome, esperado receber mensagem de erro e status 400": false
+			},
+			"testPassFailCounts": {
+				"Corpo invalido, sem propriedade nome, esperado receber mensagem de erro e status 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				289
+			],
+			"allTests": [
+				{
+					"Corpo invalido, sem propriedade nome, esperado receber mensagem de erro e status 400": false
+				}
+			]
+		},
+		{
+			"id": "48656888-7bff-4474-b062-42ab22d3b78f",
+			"name": "Corpo Inváido - Sem propriedade email",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 306,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Corpo invalido, sem propriedade email, esperado receber mensagem de erro e status 400": false
+			},
+			"testPassFailCounts": {
+				"Corpo invalido, sem propriedade email, esperado receber mensagem de erro e status 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				306
+			],
+			"allTests": [
+				{
+					"Corpo invalido, sem propriedade email, esperado receber mensagem de erro e status 400": false
+				}
+			]
+		},
+		{
+			"id": "e413fb68-cc4d-408a-9c3a-240a2dac640e",
+			"name": "Corpo Inváido - Sem propriedade senha",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 301,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Corpo invalido, sem propriedade cpf, esperado receber mensagem de erro e status 400": false
+			},
+			"testPassFailCounts": {
+				"Corpo invalido, sem propriedade cpf, esperado receber mensagem de erro e status 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				301
+			],
+			"allTests": [
+				{
+					"Corpo invalido, sem propriedade cpf, esperado receber mensagem de erro e status 400": false
+				}
+			]
+		},
+		{
+			"id": "992f3def-6601-47b1-85c8-dccf5c8b44c8",
+			"name": "Corpo Válido - dados corretos",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 309,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Corpo valido com dados corretos, esperado receber objeto e status 201": false
+			},
+			"testPassFailCounts": {
+				"Corpo valido com dados corretos, esperado receber objeto e status 201": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				309
+			],
+			"allTests": [
+				{
+					"Corpo valido com dados corretos, esperado receber objeto e status 201": false
+				}
+			]
+		},
+		{
+			"id": "c30d867f-da01-4e7d-af2b-79dd755d987a",
+			"name": "Corpo Válido - Com e-mail existente/duplicado",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 300,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Corpo invalido, com email existente/duplicado, esperado receber mensagem de erro e status 400": false
+			},
+			"testPassFailCounts": {
+				"Corpo invalido, com email existente/duplicado, esperado receber mensagem de erro e status 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				300
+			],
+			"allTests": [
+				{
+					"Corpo invalido, com email existente/duplicado, esperado receber mensagem de erro e status 400": false
+				}
+			]
+		},
+		{
+			"id": "caed621c-b6fc-4ff6-9874-58ea279a3596",
+			"name": "Corpo Vazio",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/login",
+			"time": 289,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Corpo vazio, esperado receber mensagem de erro e status 400": false
+			},
+			"testPassFailCounts": {
+				"Corpo vazio, esperado receber mensagem de erro e status 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				289
+			],
+			"allTests": [
+				{
+					"Corpo vazio, esperado receber mensagem de erro e status 400": false
+				}
+			]
+		},
+		{
+			"id": "c99a7603-5194-435c-889e-17fa79f61f73",
+			"name": "Corpo Inválido - Sem propriedade email",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/login",
+			"time": 282,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Corpo invalido sem propriedade email, esperado receber mensagem de erro e status 400": false
+			},
+			"testPassFailCounts": {
+				"Corpo invalido sem propriedade email, esperado receber mensagem de erro e status 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				282
+			],
+			"allTests": [
+				{
+					"Corpo invalido sem propriedade email, esperado receber mensagem de erro e status 400": false
+				}
+			]
+		},
+		{
+			"id": "d6e8358f-d791-480a-a055-1f23a706891c",
+			"name": "Corpo Inválido - Sem propriedade senha",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/login",
+			"time": 303,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Corpo invalido sem propriedade senha, esperado receber mensagem de erro e status 400": false
+			},
+			"testPassFailCounts": {
+				"Corpo invalido sem propriedade senha, esperado receber mensagem de erro e status 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				303
+			],
+			"allTests": [
+				{
+					"Corpo invalido sem propriedade senha, esperado receber mensagem de erro e status 400": false
+				}
+			]
+		},
+		{
+			"id": "cad86f6e-c300-4248-b475-b5a24e51b3c6",
+			"name": "Corpo Válido - Email inexistente",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/login",
+			"time": 310,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Corpo invalido enviando email inexistente, esperado receber mensagem de erro e status 400": true
+			},
+			"testPassFailCounts": {
+				"Corpo invalido enviando email inexistente, esperado receber mensagem de erro e status 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				310
+			],
+			"allTests": [
+				{
+					"Corpo invalido enviando email inexistente, esperado receber mensagem de erro e status 400": true
+				}
+			]
+		},
+		{
+			"id": "7d516ea0-6347-4a3d-9100-beaa2dcb9795",
+			"name": "Corpo Válido - Senha inválida/Incorreta",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/login",
+			"time": 297,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Corpo invalido enviando senha inválida/incorreta, esperado receber mensagem de erro e status 400": true
+			},
+			"testPassFailCounts": {
+				"Corpo invalido enviando senha inválida/incorreta, esperado receber mensagem de erro e status 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				297
+			],
+			"allTests": [
+				{
+					"Corpo invalido enviando senha inválida/incorreta, esperado receber mensagem de erro e status 400": true
+				}
+			]
+		},
+		{
+			"id": "79df6f29-d109-4b7b-9fe3-422fd3ef399e",
+			"name": "Corpo Válido - Dados corretos",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/login",
+			"time": 326,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Corpo valido com dados corretos, esperado receber objeto e status 200": false,
+				"Adicionando token na variavel de ambiente": false
+			},
+			"testPassFailCounts": {
+				"Corpo valido com dados corretos, esperado receber objeto e status 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Adicionando token na variavel de ambiente": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				326
+			],
+			"allTests": [
+				{
+					"Corpo valido com dados corretos, esperado receber objeto e status 200": false,
+					"Adicionando token na variavel de ambiente": false
+				}
+			]
+		},
+		{
+			"id": "9f43b8fe-ad64-41a5-b4be-3d0132972128",
+			"name": "Token Inválido",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 280,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Token invalido, esperado receber mensagem de erro e status 400": true
+			},
+			"testPassFailCounts": {
+				"Token invalido, esperado receber mensagem de erro e status 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				280
+			],
+			"allTests": [
+				{
+					"Token invalido, esperado receber mensagem de erro e status 400": true
+				}
+			]
+		},
+		{
+			"id": "f2dde6d0-a6ac-42ac-a80b-123e7e0d394f",
+			"name": "Token Válido",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 277,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Token valido, esperado receber objeto e status 200": false
+			},
+			"testPassFailCounts": {
+				"Token valido, esperado receber objeto e status 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				277
+			],
+			"allTests": [
+				{
+					"Token valido, esperado receber objeto e status 200": false
+				}
+			]
+		},
+		{
+			"id": "fd2d4a23-90b5-4beb-b29e-023c11a0ecf7",
+			"name": "Token Inválido",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 286,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Token invalido, esperado receber mensagem de erro e status 400": true
+			},
+			"testPassFailCounts": {
+				"Token invalido, esperado receber mensagem de erro e status 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				286
+			],
+			"allTests": [
+				{
+					"Token invalido, esperado receber mensagem de erro e status 400": true
+				}
+			]
+		},
+		{
+			"id": "a6583e8d-bad1-472e-85b3-73021f5243b9",
+			"name": "Token Válido - Corpo Vazio",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 307,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Token valido com corpo vazio, esperado receber mensagem de erro e status 400": true
+			},
+			"testPassFailCounts": {
+				"Token valido com corpo vazio, esperado receber mensagem de erro e status 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				307
+			],
+			"allTests": [
+				{
+					"Token valido com corpo vazio, esperado receber mensagem de erro e status 400": true
+				}
+			]
+		},
+		{
+			"id": "76ce51b1-8e5c-4e9c-b3fb-80eaed6c2373",
+			"name": "Token Válido - Corpo Inválido - Sem propriedade nome",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 283,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Corpo invalido, sem propriedade nome, esperado receber mensagem de erro e status 400": true
+			},
+			"testPassFailCounts": {
+				"Corpo invalido, sem propriedade nome, esperado receber mensagem de erro e status 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				283
+			],
+			"allTests": [
+				{
+					"Corpo invalido, sem propriedade nome, esperado receber mensagem de erro e status 400": true
+				}
+			]
+		},
+		{
+			"id": "8a406105-fa5c-45ea-9226-be09ec9256ca",
+			"name": "Token Válido - Corpo Inválido - Sem propriedade email",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 288,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Corpo invalido, sem propriedade email, esperado receber mensagem de erro e status 400": true
+			},
+			"testPassFailCounts": {
+				"Corpo invalido, sem propriedade email, esperado receber mensagem de erro e status 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				288
+			],
+			"allTests": [
+				{
+					"Corpo invalido, sem propriedade email, esperado receber mensagem de erro e status 400": true
+				}
+			]
+		},
+		{
+			"id": "cd01037e-1539-49bd-a872-bc686d0338b2",
+			"name": "Token Válido - Corpo Inválido - Sem propriedade senha",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 285,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Corpo invalido, sem propriedade cpf, esperado receber mensagem de erro e status 400": true
+			},
+			"testPassFailCounts": {
+				"Corpo invalido, sem propriedade cpf, esperado receber mensagem de erro e status 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				285
+			],
+			"allTests": [
+				{
+					"Corpo invalido, sem propriedade cpf, esperado receber mensagem de erro e status 400": true
+				}
+			]
+		},
+		{
+			"id": "17587aa4-78a0-422d-937c-c06070a274ee",
+			"name": "Token Válido - Corpo válido - E-mail existente/duplicado",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 288,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Corpo invalido, com email existente/duplicado, esperado receber mensagem de erro e status 400": true
+			},
+			"testPassFailCounts": {
+				"Corpo invalido, com email existente/duplicado, esperado receber mensagem de erro e status 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				288
+			],
+			"allTests": [
+				{
+					"Corpo invalido, com email existente/duplicado, esperado receber mensagem de erro e status 400": true
+				}
+			]
+		},
+		{
+			"id": "ef38916d-27d1-46bf-92de-79daac17df29",
+			"name": "Token Válido - Corpo Válido - Dados corretos",
+			"url": "https://enthusiastic-puce-mittens.cyclic.app/usuario",
+			"time": 287,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Token valido, corpo valido com dados corretos, esperado receber objeto e status 200/204": false
+			},
+			"testPassFailCounts": {
+				"Token valido, corpo valido com dados corretos, esperado receber objeto e status 200/204": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				287
+			],
+			"allTests": [
+				{
+					"Token valido, corpo valido com dados corretos, esperado receber objeto e status 200/204": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 8931,
+	"collection": {
+		"requests": [
+			{
+				"id": "06108d1a-6520-40d4-ad20-835828977bee",
+				"method": "GET"
+			},
+			{
+				"id": "e2a70a9b-451a-48a5-a8a9-6c60492733fe",
+				"method": "POST"
+			},
+			{
+				"id": "d2b6bebb-7185-4af7-b4c5-caa2d3e5ae25",
+				"method": "POST"
+			},
+			{
+				"id": "48656888-7bff-4474-b062-42ab22d3b78f",
+				"method": "POST"
+			},
+			{
+				"id": "e413fb68-cc4d-408a-9c3a-240a2dac640e",
+				"method": "POST"
+			},
+			{
+				"id": "992f3def-6601-47b1-85c8-dccf5c8b44c8",
+				"method": "POST"
+			},
+			{
+				"id": "c30d867f-da01-4e7d-af2b-79dd755d987a",
+				"method": "POST"
+			},
+			{
+				"id": "caed621c-b6fc-4ff6-9874-58ea279a3596",
+				"method": "POST"
+			},
+			{
+				"id": "c99a7603-5194-435c-889e-17fa79f61f73",
+				"method": "POST"
+			},
+			{
+				"id": "d6e8358f-d791-480a-a055-1f23a706891c",
+				"method": "POST"
+			},
+			{
+				"id": "cad86f6e-c300-4248-b475-b5a24e51b3c6",
+				"method": "POST"
+			},
+			{
+				"id": "7d516ea0-6347-4a3d-9100-beaa2dcb9795",
+				"method": "POST"
+			},
+			{
+				"id": "79df6f29-d109-4b7b-9fe3-422fd3ef399e",
+				"method": "POST"
+			},
+			{
+				"id": "9f43b8fe-ad64-41a5-b4be-3d0132972128",
+				"method": "GET"
+			},
+			{
+				"id": "f2dde6d0-a6ac-42ac-a80b-123e7e0d394f",
+				"method": "GET"
+			},
+			{
+				"id": "fd2d4a23-90b5-4beb-b29e-023c11a0ecf7",
+				"method": "PUT"
+			},
+			{
+				"id": "a6583e8d-bad1-472e-85b3-73021f5243b9",
+				"method": "PUT"
+			},
+			{
+				"id": "76ce51b1-8e5c-4e9c-b3fb-80eaed6c2373",
+				"method": "PUT"
+			},
+			{
+				"id": "8a406105-fa5c-45ea-9226-be09ec9256ca",
+				"method": "PUT"
+			},
+			{
+				"id": "cd01037e-1539-49bd-a872-bc686d0338b2",
+				"method": "PUT"
+			},
+			{
+				"id": "17587aa4-78a0-422d-937c-c06070a274ee",
+				"method": "PUT"
+			},
+			{
+				"id": "ef38916d-27d1-46bf-92de-79daac17df29",
+				"method": "PUT"
+			}
+		]
+	}
+}
